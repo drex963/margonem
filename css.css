@@ -1,0 +1,428 @@
+.menu-addons-v3 {
+    pointer-events: all;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 0 1px #010101, 0 0 0 2px #888, 0 0 0 3px #0c0d0d, 2px 2px 3px 3px rgba(12, 13, 13, .4);
+    border-radius: 5px;
+    background: black;
+    z-index: 400;
+    font-family: 'Segoe UI', sans-serif;
+    user-select: none;
+    overflow: hidden;
+}
+
+
+.header-menu-addons-v3 {
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-menu-addons-v3-lower {
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-center-v3 {
+    font-size: 14px;
+    color: beige;
+    width: 100%;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.content-menu-addons-v3 {
+    height: 273px;
+    overflow: overlay;
+    width: 473px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.icon-menu-addons-v3 {
+    display: flex;
+    width: 40px;
+    height: 25px;
+}
+
+.icon-menu-addons-v3.right {
+    justify-content: flex-end;
+}
+
+.icon-v3 {
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+    margin-top: 2px;
+    margin-right: 3px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-v3:hover {
+    background: #39393f;
+}
+
+.resizer-v3 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    cursor: nwse-resize;
+    resize: both;
+    resize: both;
+    overflow: hidden;
+}
+
+.sechar-v3 {
+    box-shadow: 0 0 0 1px #010101, 0 0 0 2px #8888884d, 0 0 0 3px #0c0d0d, 2px 2px 3px 3px rgba(12, 13, 13, .4);
+    border: 1px solid gray;
+    width: 90%;
+    background: #80808047;
+    border-radius: 4px;
+    color: white;
+}
+
+.container-addons {
+    border: 1px solid gray;
+    margin-right: 2px;
+    min-height: 71px;
+}
+
+.container-addons:hover {
+    background: #101010
+}
+
+.check-box-addons-v3 {
+    width: 15px;
+    height: 15px;
+    background: #242424;
+    border: 1px solid #ffffff4a;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.content-menu-addons-v3::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.content-menu-addons-v3 ::-webkit-scrollbar-track {
+    background: #1414148f;
+    border-radius: 3px;
+}
+
+.content-menu-addons-v3::-webkit-scrollbar-thumb {
+    background: #8d8d8d7e;
+    border-radius: 3px;
+}
+
+.content-menu-addons-v3::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.container-norm-v3 {
+    width: auto;
+}
+
+.container-menu-addonv3-heros {
+    text-align: center;
+    font-size: 14px;
+    padding: 4px;
+}
+
+.text-area-addons-v3 {
+    margin: 2px;
+    height: 60px;
+    background: linear-gradient(0deg, #121212, #0d0d0d);
+    color: white;
+    width: 230px;
+    resize: none;
+
+}
+
+.sliderContainer {
+    margin-left: 15px;
+}
+
+.sliderValueName {
+    color: #a1a1a1;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.colorPicker {
+    background: #000000;
+    transition: background .15s ease-in-out;
+    cursor: pointer;
+    width: 47px;
+    margin-top: -5px;
+}
+
+.timer-teleport {
+    font-family: 'Segoe UI', sans-serif;
+    position: absolute;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputKey {
+    width: 45px;
+    height: 15px;
+    background: #242424;
+    border: 1px solid #ffffff4a;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+.button-Addons-v3 {
+    display: flex;
+    box-shadow: 0 0 0 1px #010101, 0 0 0 2px #888, 0 0 0 3px #0c0d0d, 2px 2px 3px 3px rgba(12, 13, 13, .4);
+    border-radius: 3px;
+    background: black;
+    line-height: 1.2;
+    font-size: 13px;
+    z-index: 400;
+    font-family: 'Segoe UI', sans-serif;
+    user-select: none;
+    cursor: pointer;
+    justify-content: center;
+    padding: 0.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.button-Addons-v3:hover {
+    background: #313131;
+}
+
+.button-addons-v3 {
+    background-image: linear-gradient(to top, #101010, #101010);
+    box-shadow: inset 0 0 1px 1px #808080, inset 0 0 0 3px #101010;
+    min-height: 28px;
+    line-height: 24px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    user-select: none;
+    padding: 0 11px;
+}
+
+.button-addons-v3:hover {
+    box-shadow: inset 0 0 1px 1px #ff4040, inset 0 0 0 3px #101010;
+}
+
+.container-norm {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-addons-v3-blockade {
+    user-select: none;
+    /* Wyłącza możliwość zaznaczania */
+    -webkit-user-drag: none;
+    /* Wyłącza przeciąganie w WebKit */
+    -moz-user-drag: none;
+    /* Wyłącza przeciąganie w Firefox */
+    -ms-user-drag: none;
+    /* Wyłącza przeciąganie w IE */
+}
+
+.containerSound-v3 {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.containerSound-v3 .sechar-v3 {
+    margin-left: 20px;
+}
+
+.containerSound-v3 .container-norm .sechar-v3 {
+    width: 12%;
+    text-align: center;
+}
+
+.othercontainercontent {
+    width: 100%;
+    overflow: hidden auto;
+}
+
+.othercontainercontent::-webkit-scrollbar {
+    width: 8px;
+}
+
+.othercontainercontent::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.othercontainercontent::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.othercontainercontent::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.yrre .sechar-v3 {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    background: black;
+    border-radius: 3px;
+    min-width: 0;
+    margin-bottom: 5px;
+    color: white;
+    margin-top: 2px;
+}
+
+.icons-kto-tu {
+    border: 1px solid rgba(128, 128, 128, 0.29);
+    margin: 1px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icons-kto-tu:hover {
+    background: #39393f;
+    cursor: pointer;
+}
+
+.nick-player-kto-tu {
+    display: flex;
+    border: 1px solid rgba(128, 128, 128, 0.29);
+    margin: 2px;
+    color: white;
+    width: 100%;
+    justify-content: space-between;
+    background: #4a4a4e63;
+    column-gap: 10px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.nick-player-kto-tu:hover {
+    background: #39393f;
+}
+
+.select-addons-v3 {
+    display: flex;
+    height: 20px;
+    margin-left: 15px;
+    width: 180px;
+    border-radius: 8px;
+    margin-top: 4px;
+    background: #b1b1b1;
+}
+
+.addonsv3-arrow {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url(/img/qt-arrows.png);
+    background-position-x: 288px;
+    z-index: 250
+}
+
+.addonsv3-arrow:hover {
+    cursor: pointer;
+}
+
+
+.content-upgrader {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-upgrader .text-addons-v3 {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.square-addons-v3 {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(to bottom, #080808, #1a1a1a);
+    margin-bottom: 5px;
+    border: 1px gray solid;
+}
+
+.content-upgrader .button-Addons-v3 {
+    margin-bottom: 5px;
+    background: #212121;
+    font-size: 12px;
+    width: 60px;
+    line-height: 1.3;
+    box-shadow: none;
+    border: 1px solid gray;
+}
+
+.content-upgrader .button-Addons-v3:hover {
+    background: #434242;
+}
+
+.text-other-addons-v3 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Segoe UI", sans-serif;
+    white-space: nowrap;
+    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+    pointer-events: none;
+    color: rgb(171, 171, 171);
+    user-select: none;
+}
+
+#alert::before {
+    background: none !important;
+    width: 0px !important;
+    height: 0px !important;
+}
+
+.timerNpc {
+    margin-top: 35px;
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Segoe UI", sans-serif;
+    white-space: nowrap;
+    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+    pointer-events: none;
+    user-select: none;
+    font-size: 12px;
+    padding: 1px;
+    font-weight: 333;
+    background-color: rgba(0, 0, 0, 0.55);
+    top: 41%;
+    border: 1px solid rgb(38, 38, 38);
+    border-radius: 0px;
+    color: white;
+}

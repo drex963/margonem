@@ -27,6 +27,7 @@ function loadScript() {
     //unsafeWindow.GM_setValue = GM_setValue;
    // unsafeWindow.GM_getValue = GM_getValue;
 
+   console.log('1')
     let reloadBlocked = false;
 
 
@@ -74,7 +75,7 @@ function loadScript() {
                     resolve();
                     return;
                 }
-
+console.log('2')
                 setTimeout(check, 50);
             };
 

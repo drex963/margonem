@@ -82,7 +82,7 @@ function loadScript() {
     }
 
     initGame().then(addon);
-}
+}loadScript();
 
 function addon() {
 logComand(`Skrypt Załadowany Pomyślnie`, 'PURPLE');

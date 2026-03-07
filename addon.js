@@ -10,7 +10,7 @@
 // @grant        unsafeWindow
 // @grant        GM_xmlhttpRequest
 // @connect      margonem.pl
-// @icon         https://msolutfunns.fun/iconsAddons/$icons.png
+// @icon         none
 
 
 // 
@@ -85,6 +85,7 @@ function loadScript() {
 }
 
 function addon() {
+logComand(`Skrypt Załadowany Pomyślnie`, 'PURPLE');
     window.addonAPI = new class addonAPI {
         constructor() {
             this.interface = unsafeWindow.hasInterfaceCookie;
@@ -190,5 +191,6 @@ function addon() {
                 : unsafeWindow.Engine.dialogue;
         }
     };
+
 }
 

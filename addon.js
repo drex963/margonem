@@ -24,10 +24,11 @@ function loadScript() {
 
     if (window.top !== window.self) return;
 
-    unsafeWindow.GM_setValue = GM_setValue;
-    unsafeWindow.GM_getValue = GM_getValue;
+    //unsafeWindow.GM_setValue = GM_setValue;
+   // unsafeWindow.GM_getValue = GM_getValue;
 
     let reloadBlocked = false;
+
 
     function isGameWorldPage() {
         const url = location.href;
@@ -35,7 +36,7 @@ function loadScript() {
     }
 
     if (isGameWorldPage()) {
-        unsafeWindow.hasInterfaceCookie = getCookie('interface');
+        unsafeWindow.interfaceGame = getCookie('interface');
     }
 
     function reloadSite() {
@@ -45,12 +46,12 @@ function loadScript() {
         reloadBlocked = true;
     }
 
-    if (!unsafeWindow.hasInterfaceCookie) {
+    if (!unsafeWindow.interfaceGame) {
         reloadSite();
         logComand(`Nie wykryto interfejsu, reload strony`, 'RED');
     }
 
-    logComand(`[Interfejs] ${unsafeWindow.hasInterfaceCookie}`, '#b518d3');
+    logComand(`[Interfejs] ${unsafeWindow.interfaceGame}`, '#b518d3');
 
     function initGame() {
         return new Promise(resolve => {
@@ -58,7 +59,7 @@ function loadScript() {
             const check = () => {
 
                 if (
-                    unsafeWindow.hasInterfaceCookie === 'si' &&
+                    unsafeWindow.interfaceGame === 'si' &&
                     unsafeWindow.g &&
                     unsafeWindow.g.init >= 1
                 ) {
@@ -67,7 +68,7 @@ function loadScript() {
                 }
 
                 if (
-                    unsafeWindow.hasInterfaceCookie === 'ni' &&
+                    unsafeWindow.interfaceGame === 'ni' &&
                     unsafeWindow.Engine?.allInit
                 ) {
                     resolve();
@@ -88,7 +89,7 @@ function addon() {
 logComand(`Skrypt Załadowany Pomyślnie`, 'PURPLE');
     window.addonAPI = new class addonAPI {
         constructor() {
-            this.interface = unsafeWindow.hasInterfaceCookie;
+            this.interface = unsafeWindow.interfaceGame;
         }
 
         get isOld() {

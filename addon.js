@@ -11,7 +11,7 @@
 // @grant        GM_xmlhttpRequest
 // @connect      margonem.pl
 // @icon         none
-
+// ==/UserScript==
 
 // 
 function logComand(c, color) {
